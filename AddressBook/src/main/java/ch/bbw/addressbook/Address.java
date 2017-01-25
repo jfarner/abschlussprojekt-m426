@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Address {
 
+	//Attribute
 	private int id;
 	private String firstname;
     private String lastname;
