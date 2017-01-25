@@ -3,9 +3,12 @@ package ch.bbw.addressbook;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Named
-//@ApplicationScoped
-public class AddressDAO_Memory /*implements AddressDAO*/{
+import javax.faces.bean.ApplicationScoped;
+import javax.inject.Named;
+
+@Named("AddressDAO")
+@ApplicationScoped
+public class AddressDAO_Memory implements AddressDAO{
 		
 	private List<Address> addresses = new ArrayList<>();
 	
@@ -128,6 +131,50 @@ public class AddressDAO_Memory /*implements AddressDAO*/{
 					filterMem.set(j, filterMem.get(j+1));
 					filterMem.set(j + 1, temp);
 				}
+			}
+		}
+		return filterMem;
+	}
+	
+	@Override
+	public List<Address> filterByKat() {
+		
+		int counter = 0;
+		Address temp;
+		List<Address> filterMem = addresses;
+		for(int i = 1; i < filterMem.size(); i++) {
+			for(int j = 0; j < filterMem.size()-i; j++) {
+				while((char)(filterMem.get(j).getKategorie().charAt(counter)) == (char)(filterMem.get(j+1).getKategorie().charAt(counter))){
+					counter++;
+				}
+				if((char)(filterMem.get(j).getKategorie().charAt(counter)) > (char)(filterMem.get(j+1).getKategorie().charAt(counter))) {
+					temp=filterMem.get(j);
+					filterMem.set(j, filterMem.get(j+1));
+					filterMem.set(j + 1, temp);
+				}
+				counter = 0;
+			}
+		}
+		return filterMem;
+	}
+	
+	@Override
+	public List<Address> filterByEMail() {
+		
+		int counter = 0;
+		Address temp;
+		List<Address> filterMem = addresses;
+		for(int i = 1; i < filterMem.size(); i++) {
+			for(int j = 0; j < filterMem.size()-i; j++) {
+				while((char)(filterMem.get(j).geteMail().charAt(counter)) == (char)(filterMem.get(j+1).geteMail().charAt(counter))){
+					counter++;
+				}
+				if((char)(filterMem.get(j).geteMail().charAt(counter)) > (char)(filterMem.get(j+1).geteMail().charAt(counter))) {
+					temp=filterMem.get(j);
+					filterMem.set(j, filterMem.get(j+1));
+					filterMem.set(j + 1, temp);
+				}
+				counter = 0;
 			}
 		}
 		return filterMem;

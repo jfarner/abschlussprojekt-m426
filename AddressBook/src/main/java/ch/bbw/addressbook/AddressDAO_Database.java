@@ -13,9 +13,9 @@ import javax.annotation.PreDestroy;
 import javax.faces.bean.ApplicationScoped;
 import javax.inject.Named;
 
-@Named("AddressDAO")
-@ApplicationScoped
-public class AddressDAO_Database implements AddressDAO {
+//@Named("AddressDAO")
+//@ApplicationScoped
+public class AddressDAO_Database /*implements AddressDAO*/ {
 	
 	private Connection connection; // TODO: to be replaced by connection pool
 	
@@ -74,7 +74,8 @@ public class AddressDAO_Database implements AddressDAO {
 				list.add(new Address(
 						entries.getInt("id"), entries.getString("firstname"), 
 						entries.getString("lastname"), entries.getString("phonenumber"),
-						entries.getDate("registrationDate")));
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
 			}
 			entries.close();
 			stmt.close();
@@ -83,7 +84,7 @@ public class AddressDAO_Database implements AddressDAO {
 		}
 		return list;
 	}
-
+	
 	/* (non-Javadoc)
 	 * @see ch.bbw.addressbook.AddressDAOInterface#update(ch.bbw.addressbook.Address)
 	 */
@@ -101,11 +102,8 @@ public class AddressDAO_Database implements AddressDAO {
 	}
 	
 	
-	/* (non-Javadoc)
-	 * @see ch.bbw.addressbook.AddressDAOInterface#readAll()
-	 */
-//	@Override
-	public List<Address> readAll() {
+	//@Override
+	public List<Address> filterByID() {
 		List<Address> list = new ArrayList<>();
 		try {
 			Statement stmt = connection.createStatement();
@@ -114,58 +112,51 @@ public class AddressDAO_Database implements AddressDAO {
 				list.add(new Address(
 						entries.getInt("id"), entries.getString("firstname"), 
 						entries.getString("lastname"), entries.getString("phonenumber"),
-						entries.getDate("registrationDate")));
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
 			}
 			entries.close();
 			stmt.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return list;
-	}
-
-	/* (non-Javadoc)
-	 * @see ch.bbw.addressbook.AddressDAOInterface#update(ch.bbw.addressbook.Address)
-	 */
-//	@Override
-	public void update(Address address) {
-		// TODO: update, not implemented yet
-	}
-	
-	/* (non-Javadoc)
-	 * @see ch.bbw.addressbook.AddressDAOInterface#delete(int)
-	 */
-//	@Override
-	public void delete(int id) {
-		// TODO: delete, not implemented yet
-	}
-	
-	@Override
-	public List<Address> filterByID() {
-		/*
+		
 		Address temp;
-		List<Address> filterMem = addresses;
-		for(int i = 1; i < filterMem.size(); i++) {
-			for(int j = 0; j < filterMem.size()-i; j++) {
-				if(filterMem.get(j).getId() > filterMem.get(j+1).getId()) {
-					temp=filterMem.get(j);
-					filterMem.set(j, filterMem.get(j+1));
-					filterMem.set(j + 1, temp);
+		for(int i = 1; i < list.size(); i++) {
+			for(int j = 0; j < list.size()-i; j++) {
+				if(list.get(j).getId() > list.get(j+1).getId()) {
+					temp=list.get(j);
+					list.set(j, list.get(j+1));
+					list.set(j + 1, temp);
 				}
 				
 			}
 		}
-		return filterMem;
-		*/
-		return null;
+		return list;
 	}
 
-	@Override
+	//@Override
 	public List<Address> filterByFirstname() {
-		/*
+		List<Address> list = new ArrayList<>();
+		try {
+			Statement stmt = connection.createStatement();
+			ResultSet entries = stmt.executeQuery("SELECT * FROM address");
+			while (entries.next()) {
+				list.add(new Address(
+						entries.getInt("id"), entries.getString("firstname"), 
+						entries.getString("lastname"), entries.getString("phonenumber"),
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
+			}
+			entries.close();
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 		int counter = 0;
 		Address temp;
-		List<Address> filterMem = addresses;
+		List<Address> filterMem = list;
 		for(int i = 1; i < filterMem.size(); i++) {
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				while((char)(filterMem.get(j).getFirstname().charAt(counter)) == (char)(filterMem.get(j+1).getFirstname().charAt(counter))){
@@ -180,16 +171,30 @@ public class AddressDAO_Database implements AddressDAO {
 			}
 		}
 		return filterMem;
-		*/
-		return null;
 	}
 
-	@Override
+	//@Override
 	public List<Address> filterByLastname() {
-		/*
+		List<Address> list = new ArrayList<>();
+		try {
+			Statement stmt = connection.createStatement();
+			ResultSet entries = stmt.executeQuery("SELECT * FROM address");
+			while (entries.next()) {
+				list.add(new Address(
+						entries.getInt("id"), entries.getString("firstname"), 
+						entries.getString("lastname"), entries.getString("phonenumber"),
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
+			}
+			entries.close();
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 		int counter = 0;
 		Address temp;
-		List<Address> filterMem = addresses;
+		List<Address> filterMem = list;
 		for(int i = 1; i < filterMem.size(); i++) {
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				while((char)(filterMem.get(j).getLastname().charAt(counter)) == (char)(filterMem.get(j+1).getLastname().charAt(counter))){
@@ -204,16 +209,30 @@ public class AddressDAO_Database implements AddressDAO {
 			}
 		}
 		return filterMem;
-		*/
-		return null;
 	}
 
-	@Override
+	//@Override
 	public List<Address> filterByPhonenumber() {
-		/*
+		List<Address> list = new ArrayList<>();
+		try {
+			Statement stmt = connection.createStatement();
+			ResultSet entries = stmt.executeQuery("SELECT * FROM address");
+			while (entries.next()) {
+				list.add(new Address(
+						entries.getInt("id"), entries.getString("firstname"), 
+						entries.getString("lastname"), entries.getString("phonenumber"),
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
+			}
+			entries.close();
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 		int counter = 0;
 		Address temp;
-		List<Address> filterMem = ;
+		List<Address> filterMem = list;
 		for(int i = 1; i < filterMem.size(); i++) {
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				while((char)(filterMem.get(j).getLastname().charAt(counter)) == (char)(filterMem.get(j+1).getLastname().charAt(counter))){
@@ -228,15 +247,29 @@ public class AddressDAO_Database implements AddressDAO {
 			}
 		}
 		return filterMem;
-		*/
-		return null;
 	}
 
-	@Override
+	//@Override
 	public List<Address> filterByDate() {
-		/*
+		List<Address> list = new ArrayList<>();
+		try {
+			Statement stmt = connection.createStatement();
+			ResultSet entries = stmt.executeQuery("SELECT * FROM address");
+			while (entries.next()) {
+				list.add(new Address(
+						entries.getInt("id"), entries.getString("firstname"), 
+						entries.getString("lastname"), entries.getString("phonenumber"),
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
+			}
+			entries.close();
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 		Address temp;
-		List<Address> filterMem = addresses;
+		List<Address> filterMem = list;
 		for(int i = 1; i < filterMem.size(); i++) {
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				if(filterMem.get(j).getRegistrationDate().getTime() > filterMem.get(j+1).getRegistrationDate().getTime()) {
@@ -247,8 +280,83 @@ public class AddressDAO_Database implements AddressDAO {
 			}
 		}
 		return filterMem;
-		*/
-		return null;
 	}
-
+	
+	//@Override
+	public List<Address> filterByKat() {
+		List<Address> list = new ArrayList<>();
+		try {
+			Statement stmt = connection.createStatement();
+			ResultSet entries = stmt.executeQuery("SELECT * FROM address");
+			while (entries.next()) {
+				list.add(new Address(
+						entries.getInt("id"), entries.getString("firstname"), 
+						entries.getString("lastname"), entries.getString("phonenumber"),
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
+			}
+			entries.close();
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		int counter = 0;
+		Address temp;
+		List<Address> filterMem = list;
+		for(int i = 1; i < filterMem.size(); i++) {
+			for(int j = 0; j < filterMem.size()-i; j++) {
+				while((char)(filterMem.get(j).getKategorie().charAt(counter)) == (char)(filterMem.get(j+1).getKategorie().charAt(counter))){
+					counter++;
+				}
+				if((char)(filterMem.get(j).getKategorie().charAt(counter)) > (char)(filterMem.get(j+1).getKategorie().charAt(counter))) {
+					temp=filterMem.get(j);
+					filterMem.set(j, filterMem.get(j+1));
+					filterMem.set(j + 1, temp);
+				}
+				counter = 0;
+			}
+		}
+		return filterMem;
+	}
+	
+	//@Override
+	public List<Address> filterByEMail() {
+		List<Address> list = new ArrayList<>();
+		try {
+			Statement stmt = connection.createStatement();
+			ResultSet entries = stmt.executeQuery("SELECT * FROM address");
+			while (entries.next()) {
+				list.add(new Address(
+						entries.getInt("id"), entries.getString("firstname"), 
+						entries.getString("lastname"), entries.getString("phonenumber"),
+						entries.getDate("registrationDate"),entries.getKategorie("kategorie"),
+						entries.geteMail("eMail")));
+			}
+			entries.close();
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		int counter = 0;
+		Address temp;
+		List<Address> filterMem = list;
+		for(int i = 1; i < filterMem.size(); i++) {
+			for(int j = 0; j < filterMem.size()-i; j++) {
+				while((char)(filterMem.get(j).geteMail().charAt(counter)) == (char)(filterMem.get(j+1).geteMail().charAt(counter))){
+					counter++;
+				}
+				if((char)(filterMem.get(j).geteMail().charAt(counter)) > (char)(filterMem.get(j+1).geteMail().charAt(counter))) {
+					temp=filterMem.get(j);
+					filterMem.set(j, filterMem.get(j+1));
+					filterMem.set(j + 1, temp);
+				}
+				counter = 0;
+			}
+		}
+		return filterMem;
+	}
 }

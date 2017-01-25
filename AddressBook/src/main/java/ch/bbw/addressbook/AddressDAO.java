@@ -25,4 +25,8 @@ public interface AddressDAO {
 
 	void delete(int id);
 
+	List<Address> filterByKat();
+
+	List<Address> filterByEMail();
+
 }

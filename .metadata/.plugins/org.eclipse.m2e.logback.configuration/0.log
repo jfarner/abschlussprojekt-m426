@@ -1,0 +1,95 @@
+2017-01-25 09:05:56,516 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: ch.bbw.addressbook:AddressBook:0.0.1-SNAPSHOT @ D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\pom.xml.
+2017-01-25 09:05:56,525 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: ch.bbw.addressbook:AddressBook:0.0.1-SNAPSHOT @ D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\pom.xml.
+2017-01-25 09:05:57,715 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:05:57,719 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-01-25 09:05:57,743 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:05:57,744 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:06:08,147 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: ch.bbw.addressbook:AddressBook:0.0.1-SNAPSHOT @ D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\pom.xml.
+2017-01-25 09:06:10,129 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:06:10,131 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:06:10,132 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:06:10,132 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:10:59,848 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:10:59,848 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:10:59,849 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:10:59,849 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:13:32,929 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:13:32,929 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:13:32,930 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:13:32,930 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:16:29,426 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:16:29,427 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:16:29,428 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:16:29,428 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:16:57,371 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:16:57,372 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:16:57,372 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:16:57,373 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:17:20,607 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:17:20,607 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:17:20,609 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:17:20,609 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:17:24,964 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:17:24,964 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:17:24,967 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:17:24,967 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:20:29,021 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:20:29,021 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:20:29,023 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:20:29,023 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:21:18,973 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:21:18,973 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:21:18,974 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:21:18,974 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:21:47,513 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:21:47,514 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:21:47,515 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:21:47,515 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:25:55,300 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:25:55,301 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:25:55,301 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:25:55,301 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:26:00,280 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:26:00,280 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:26:00,281 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:26:00,281 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:26:27,844 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:26:27,844 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:26:27,845 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:26:27,845 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:37:17,967 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:37:17,967 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:37:17,968 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:37:17,968 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:37:48,898 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:37:48,898 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:37:48,899 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:37:48,899 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:38:04,692 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:38:04,692 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:38:04,694 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:38:04,694 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:38:17,145 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:38:17,145 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:38:17,146 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:38:17,146 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:39:34,312 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:39:34,312 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:39:34,313 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:39:34,313 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:40:09,637 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:40:09,638 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:40:09,639 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:40:09,639 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:40:24,648 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:40:24,649 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:40:24,650 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:40:24,650 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:43:09,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:43:09,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:43:09,125 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:43:09,125 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources
+2017-01-25 09:44:23,178 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:44:23,178 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-25 09:44:23,180 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-25 09:44:23,180 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AddressBook\abschlussprojekt-m426\abschlussprojekt-m426\AddressBook\src\test\resources

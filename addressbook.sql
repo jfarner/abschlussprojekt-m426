@@ -6,6 +6,8 @@ CREATE TABLE `address` (
   `lastname` varchar(255) default NULL,
   `phoneNumber` varchar(100) default NULL,
   `registrationDate` varchar(255),
+  `eMail` varchar(100) default NULL,
+  `kategorie` varchar(100) default NULL,
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
 
