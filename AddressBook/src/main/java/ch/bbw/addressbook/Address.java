@@ -10,6 +10,8 @@ public class Address {
     private String lastname;
     private String phonenumber;
     private Date registrationDate;
+	private String eMail;
+    private String asdf;
 
     public Address(int id, String firstname, String lastname, String phonenumber) {
     	this(id, firstname, lastname, phonenumber, null);
