@@ -29,7 +29,7 @@ public class AddressViewController {
         phoneNumber = "";    	
     }
     public void saveAddress() {
-        Address address = new Address(0, firstname, lastname, phoneNumber);
+        Address address = new Address(0, firstname, lastname, phoneNumber, "random@gmail.com", "kategorie1");
         addressService.registerAddress(address);
         message = "The address was saved successfully.";
         clearFields();

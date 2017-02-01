@@ -1,0 +1,25 @@
+package ch.bbw.addressbook;
+
+public class Kategorie {
+	private String art;
+	private String fehler;
+	
+	public Kategorie(String art){
+		if(isCorrectKategorie(art)){
+			this.art = art;
+			this.fehler = "Keine Fehler";
+		}else{
+			this.fehler = "Diese Kategorie exsistiert nicht!";
+		}
+	}
+	
+	private boolean isCorrectKategorie(String art)	{
+		if(art.equals("") || art.equals("") || art.equals("")){
+			return true;
+		}
+		
+		else{
+			return false;
+		}
+	}
+}

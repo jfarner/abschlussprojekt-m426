@@ -1,0 +1,87 @@
+package ch.bbw.test;
+
+import static org.junit.Assert.*;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Date;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import ch.bbw.addressbook.Address;
+import ch.bbw.addressbook.AddressDAO_Memory;
+
+public class TestAddress {
+	AddressDAO_Memory mem = new AddressDAO_Memory();
+	
+	
+	@Before
+	public void setup() {		
+		mem.create(new Address(1, "dalibor", "kratky", "079 999 99 99", new Date(), "5im14dakratky@lernende.bbw.ch", "schueler"));
+		mem.create(new Address(2, "mati", "pekalski", "078 888 88 88", new Date(), "5im14mapekalski@lernende.bbw.ch", "schueler"));
+		mem.create(new Address(3, "jonathan", "farner", "077 777 77 77", new Date(), "5im14jofarner@lernende.bbw.ch", "schueler"));
+		mem.create(new Address(4, "laura", "luethi", "076 666 66 66", new Date(), "5im14laluethi@lernende.bbw.ch", "lehrer"));	
+	}
+	
+	@Test
+	public void filterByFirstname() {
+		assertEquals(3, mem.filterByFirstname().get(1).getId());
+		assertEquals(1, mem.filterByFirstname().get(0).getId());
+		assertEquals(2, mem.filterByFirstname().get(3).getId());
+		assertEquals(4, mem.filterByFirstname().get(2).getId());
+		
+	}
+	
+	@Test
+	public void filterByLastname() {
+		assertEquals(3, mem.filterByLastname().get(0).getId());
+		assertEquals(1, mem.filterByLastname().get(1).getId());
+		assertEquals(4, mem.filterByLastname().get(2).getId());
+		assertEquals(2, mem.filterByLastname().get(3).getId());
+		
+	}
+	
+	@Test
+	public void filerByTel() {
+		assertEquals(1, mem.filterByPhonenumber().get(0).getId());
+		assertEquals(2, mem.filterByPhonenumber().get(1).getId());
+		assertEquals(3, mem.filterByPhonenumber().get(2).getId());
+		assertEquals(4, mem.filterByPhonenumber().get(3).getId());
+		
+	}
+	
+	@Test
+	public void filerByDate() {
+		assertEquals(1, mem.filterByDate().get(0).getId());
+		assertEquals(2, mem.filterByDate().get(1).getId());
+		assertEquals(3, mem.filterByDate().get(2).getId());
+		assertEquals(4, mem.filterByDate().get(3).getId());
+		
+	}
+	
+	@Test
+	public void filerById() {
+		assertEquals(1, mem.filterByID().get(0).getId());
+		assertEquals(2, mem.filterByID().get(1).getId());
+		assertEquals(3, mem.filterByID().get(2).getId());
+		assertEquals(4, mem.filterByID().get(3).getId());
+		
+	}
+	
+	@Test
+	public void filerByKat() {
+		assertEquals("laura", mem.filterByKat().get(0).getFirstname());	
+		
+	}
+	
+	@Test
+	public void filerByeMail() {
+		assertEquals(3, mem.filterByEMail().get(1).getId());
+		assertEquals(1, mem.filterByEMail().get(0).getId());
+		assertEquals(2, mem.filterByEMail().get(3).getId());
+		assertEquals(4, mem.filterByEMail().get(2).getId());
+		
+	}
+
+}

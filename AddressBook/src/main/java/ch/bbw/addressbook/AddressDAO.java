@@ -10,9 +10,23 @@ public interface AddressDAO {
 	Address read(int id);
 
 	List<Address> readAll();
+	
+	List<Address> filterByID();
+	
+	List<Address> filterByFirstname();
+	
+	List<Address> filterByLastname();
+	
+	List<Address> filterByPhonenumber();
+	
+	List<Address> filterByDate();
 
 	void update(Address address);
 
 	void delete(int id);
+
+	List<Address> filterByKat();
+
+	List<Address> filterByEMail();
 
 }
