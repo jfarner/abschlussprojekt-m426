@@ -63,6 +63,9 @@ public class AddressDAO_Memory implements AddressDAO{
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				while((char)(filterMem.get(j).getFirstname().charAt(counter)) == (char)(filterMem.get(j+1).getFirstname().charAt(counter))){
 					counter++;
+					if(counter == filterMem.size()){
+						break;
+					}
 				}
 				if((char)(filterMem.get(j).getFirstname().charAt(counter)) > (char)(filterMem.get(j+1).getFirstname().charAt(counter))) {
 					temp=filterMem.get(j);
@@ -85,8 +88,12 @@ public class AddressDAO_Memory implements AddressDAO{
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				while((char)(filterMem.get(j).getLastname().charAt(counter)) == (char)(filterMem.get(j+1).getLastname().charAt(counter))){
 					counter++;
+					if(counter == filterMem.size()){
+						break;
+					}
+					
 				}
-				if((char)(filterMem.get(j).getFirstname().charAt(counter)) > (char)(filterMem.get(j+1).getFirstname().charAt(counter))) {
+				if((char)(filterMem.get(j).getLastname().charAt(counter)) > (char)(filterMem.get(j+1).getLastname().charAt(counter))) {
 					temp=filterMem.get(j);
 					filterMem.set(j, filterMem.get(j+1));
 					filterMem.set(j + 1, temp);
@@ -105,8 +112,11 @@ public class AddressDAO_Memory implements AddressDAO{
 		List<Address> filterMem = addresses;
 		for(int i = 1; i < filterMem.size(); i++) {
 			for(int j = 0; j < filterMem.size()-i; j++) {
-				while((char)(filterMem.get(j).getLastname().charAt(counter)) == (char)(filterMem.get(j+1).getLastname().charAt(counter))){
+				while((char)(filterMem.get(j).getPhonenumber().charAt(counter)) == (char)(filterMem.get(j+1).getPhonenumber().charAt(counter))){
 					counter++;
+					if(counter == filterMem.size()){
+						break;
+					}
 				}
 				if((char)(filterMem.get(j).getPhonenumber().charAt(counter)) > (char)(filterMem.get(j+1).getPhonenumber().charAt(counter))) {
 					temp=filterMem.get(j);
@@ -146,6 +156,9 @@ public class AddressDAO_Memory implements AddressDAO{
 			for(int j = 0; j < filterMem.size()-i; j++) {
 				while((char)(filterMem.get(j).getKategorie().charAt(counter)) == (char)(filterMem.get(j+1).getKategorie().charAt(counter))){
 					counter++;
+					if(counter == filterMem.size()){
+						break;
+					}
 				}
 				if((char)(filterMem.get(j).getKategorie().charAt(counter)) > (char)(filterMem.get(j+1).getKategorie().charAt(counter))) {
 					temp=filterMem.get(j);

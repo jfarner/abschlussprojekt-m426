@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAddress" project="AddressBook" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="ch.bbw.test.TestAddress" time="0.0">
+    <testcase name="filerByKat" classname="ch.bbw.test.TestAddress" time="0.0"/>
+    <testcase name="filerByTel" classname="ch.bbw.test.TestAddress" time="0.0"/>
+    <testcase name="filerById" classname="ch.bbw.test.TestAddress" time="0.0"/>
+    <testcase name="filterByFirstname" classname="ch.bbw.test.TestAddress" time="0.0"/>
+    <testcase name="filerByDate" classname="ch.bbw.test.TestAddress" time="0.0"/>
+    <testcase name="filterByLastname" classname="ch.bbw.test.TestAddress" time="0.0"/>
+    <testcase name="filerByeMail" classname="ch.bbw.test.TestAddress" time="0.0"/>
+  </testsuite>
+</testrun>
