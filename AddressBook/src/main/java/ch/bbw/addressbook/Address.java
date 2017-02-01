@@ -12,6 +12,9 @@ public class Address {
     private Date registrationDate;
 	private String eMail;
     private String kategorie;
+	private String ort;
+ 	private String geschlecht:
+ 	private boolean activeAddress;
 
 	public Address(int id, String firstname, String lastname, String phonenumber, String eMail, String kategorie) {
 		this.id = id;
@@ -31,6 +34,19 @@ public class Address {
         this.eMail = eMail;
         this.kategorie = kategorie;
     }
+		
+    public Address(int id, String firstname, String lastname, String phonenumber, Date registrationDate, String ort, String geschlecht, boolean activeAddress) {
+     	this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phonenumber = phonenumber;
+        this.registrationDate = registrationDate;
+		this.eMail = eMail;
+        this.kategorie = kategorie;
+ 		this.ort = ort;
+ 		this.geschlecht = geschlecht;
+ 		this.activeAddress = activeAddress;
+     }
 
     public String geteMail() {
 		return eMail;
@@ -77,5 +93,22 @@ public class Address {
 	public void setRegistrationDate(Date registrationDate) {
 		this.registrationDate = registrationDate;
 	}
-
+	public String ort() {
+ 		return ort;
+ 	}
+ 	public void setOrt(String ort) {
+ 		this.ort = ort;
+ 	}
+ 	public String getGeschlecht() {
+ 		return geschlecht;
+	}
+ 	public void setGeschlecht(String geschlecht) {
+ 		this.geschlecht = geschlecht;
+ 	}
+ 	public boolean getActiveAddress() {
+ 		return activeAddress;
+ 	}
+ 	public void setActiveAddress(String activeAddress) {
+ 		this.activeAddress = activeAddress;
+ 	}
 }
